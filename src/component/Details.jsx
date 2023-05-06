@@ -23,8 +23,8 @@ const Details = () => {
                 !Boolean(details) ? <Loading /> :
                     <Container style={{ marginTop: '30px' }}>
                         <Grid container>
-                            <Grid item xm={12} sm={12} md={12} lg={6} style={{ alignItems: 'center' }}>
-                                <img src={details.image ? details.image.original : noPicLarge} alt={details.name} style={{ width: '447px' }} />
+                            <Grid item xm={12} sm={12} md={12} lg={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src={details.image ? details.image.original : noPicLarge} alt={details.name} className='imageView' />
                             </Grid>
                             <Grid item xm={12} sm={12} md={12} lg={6}>
                                 <DetailsLeft details={details} />
